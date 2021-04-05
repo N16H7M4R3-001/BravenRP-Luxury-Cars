@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luxury Cars: Sportives</title>
+  <!--Swiperjs-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0%
+  }
+body {
+  background: #000;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+img{
+  width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0005);
+}
+
+.id{
+  color: #fff;
+  font-size: 20px;
+}
+</style>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="mercedes.html"><img src="images/logomerco.png"></a></div>
+      <div class="swiper-slide"><a href="bmw.html"><img src="images/logobmw.png"></a></div>
+      <div class="swiper-slide"><a href="audi.html"><img src="images/logoaudi.png"></a></div>
+      <div class="swiper-slide"><a href="alfaromeo.html"><img src="images/logoalfaromeo.png"></a></div>
+      <div class="swiper-slide"><a href="chevrolet.html"><img src="images/logochevrolet.png"></a></div>
+      <div class="swiper-slide"><a href="bentley.html"><img src="images/logobentley.png"></a></div>
+      <div class="swiper-slide"><a href="maserati.html"><img src="images/logomaserati.png"></a></div>
+      <div class="swiper-slide"><a href="jaguar.html"><img src="images/logojaguar.png"></a></div>
+      <div class="swiper-slide"><a href="ford.html"><img src="images/logoford.png"></a></div>
+      <div class="swiper-slide"><a href="nissan.html"><img src="images/logonissan.png"></a></div>
+      <div class="swiper-slide"><a href="peugeot.html"><img src="images/logopeugeot.png"></a></div>
+      <div class="swiper-slide"><a href="rangerover.html"><img src="images/logorangerover.png"></a></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next id"></div>
+    <div class="swiper-button-prev id"></div>
+  </div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', 
+    {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop:true,
+     autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
